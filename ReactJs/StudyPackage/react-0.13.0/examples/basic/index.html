@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>Basic Example</title>
+    <link rel="stylesheet" href="../shared/css/base.css" />
+  </head>
+  <body>
+    <h1>Basic Example</h1>
+    <div id="app">
+      
+    </div>
+    <script src="../shared/thirdparty/es5-shim.min.js"></script>
+    <script src="../shared/thirdparty/es5-sham.min.js"></script>
+    <script src="../shared/thirdparty/console-polyfill.js"></script>
+    <script src="../../build/react.js"></script>
+    <script src="../../../../Scripts/react/JSXTransformer-0.13.1.js"></script>
+
+    <script type="text/jsx" >
+        var MessBox = React.createClass({
+        render: function() {
+
+        return (
+        <h1>
+            世界你好！！
+        </h1>
+        );
+        }
+        });
+
+        React.render(
+        <MessBox />, document.getElementById("app"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB5B9756-6FA6-471A-B486-F9162CDD9BD7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReactJs</RootNamespace>
+    <AssemblyName>ReactJs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-commonjs\package.json" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-commonjs\README.md" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-mobile\README.md" />
+    <Content Include="StudyPackage\react-0.13.0\examples\README.md" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\jsapp\package.json" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\reactserver\package.json" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\README.md" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\webapp\index.php" />
+    <Content Include="StudyPackage\react-0.13.0\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Html\Index.html" />
+    <Content Include="Scripts\react\JSXTransformer-0.13.1.js" />
+    <Content Include="Scripts\react\react-0.13.1.js" />
+    <Content Include="Scripts\react\react-0.13.1.min.js" />
+    <Content Include="Scripts\react\react-with-addons-0.13.1.js" />
+    <Content Include="Scripts\react\react-with-addons-0.13.1.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\build\JSXTransformer.js" />
+    <Content Include="StudyPackage\react-0.13.0\build\react-with-addons.js" />
+    <Content Include="StudyPackage\react-0.13.0\build\react-with-addons.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\build\react.js" />
+    <Content Include="StudyPackage\react-0.13.0\build\react.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-commonjs\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-commonjs\index.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-external\example.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-external\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-harmony\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-precompile\build\example.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-precompile\example.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx-precompile\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic-jsx\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\basic\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-bootstrap\css\example.css" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-bootstrap\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-bootstrap\js\app.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-bootstrap\thirdparty\bootstrap.min.css" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-bootstrap\thirdparty\bootstrap.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-mobile\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\jquery-mobile\js\app.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\quadratic\example.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\quadratic\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\jsapp\src\App.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\reactserver\server.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\server-rendering\webapp\static\bundle.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\shared\css\base.css" />
+    <Content Include="StudyPackage\react-0.13.0\examples\shared\thirdparty\console-polyfill.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\shared\thirdparty\es5-sham.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\shared\thirdparty\es5-shim.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\shared\thirdparty\jquery.min.js" />
+    <Content Include="StudyPackage\react-0.13.0\examples\transitions\index.html" />
+    <Content Include="StudyPackage\react-0.13.0\examples\transitions\transition.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57544</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57544/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

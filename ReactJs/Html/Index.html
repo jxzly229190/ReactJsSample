@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/react/react-0.13.1.js"></script>
+    <script src="../Scripts/react/JSXTransformer-0.13.1.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/jsx">
+         var MessBox = React.createClass({
+            clickEvent:function(){ alert('你点了我一下，就在刚才~~');},
+            render: function() {
+                
+                return (
+                    <h1 onClick={this.clickEvent}>
+                        世界你好！！
+                    </h1>
+                );
+            }        
+        });
+
+        var HelloBox = React.createClass({
+            render:function(){
+                var name=this.props.name;
+                return <h2>Hello {name}</h2>;
+        }
+        });
+
+         var InputBox = React.createClass({
+             changeHandler: function(){
+                 this.props.changeName(this.refs.name.getDOMNode().value);
+             },
+             render: function () {
+                return <input type="text" placeholder="Name is here" ref="name" onBlur ={this.changeHandler}/>;
+             }
+         });
+
+         var Greetor = React.createClass({
+             changeNameHandler:function (value){
+                 this.setState({name: value});
+                 alert(value);
+             },
+             render: function(){
+                 return (
+                        <HelloBox name="abc" />
+                        <H2>ABC</H2>
+                         <InputBox changeName={this.changeNameHandler} />
+                    )
+             }
+         });
+
+        React.render(<MessBox/>, document.getElementById("app"));
+       
+    </script>
+</body>
+</html>
